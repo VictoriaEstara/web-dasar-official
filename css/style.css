@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+
+    background-color: #1A1A40;
+}
+
+header {
+    display: inline;
+}
+
+nav {
+    background-color: #270082; 
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
+
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #E8E8E8;
+}
+
+nav a:hover {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.nav-list ul {
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+.nav-list li {
+    list-style-type: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+.nav-list li:hover a {
+    background-color: #FEC260;
+    color: #270082;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 5;
+
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+main button {
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #FEC260;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #270082;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main button:hover {
+    border: 3px solid #3b00c4;
+    color: white;
+    background-color: transparent;
+}
+
+h1 {
+    font-size: 4.5em;
+    color: #E7F6F2; 
+}
+
+h2 {
+    font-size: 2em;
+    color: #FEC260;
+} 
+
+h3 {
+    font-size: 1.5em;
+    color: #FEC260;
+}
+
+aside {
+    flex: 1;
+}
+
+p, table {
+    color: white;
+}
+
+th, td {
+    text-align: left;
+    gap: 3rem;
+}
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #270082;
+    text-align: center;
+    font-weight: bold;
+}
+
+.one {
+    text-shadow: 5px 5px 12px #270082;
+}
+
+.tl-justify {
+    text-align: justify;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #3b00c4;
+    text-align: center;
+    color: white;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300%;
+
+    object-fit: cover;
+    object-position: center;
+}
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: stretch
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        justify-content: center;
+    }
+
+    main aside {
+        align-self: stretch;
+    }
+}
